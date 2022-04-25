@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body{
+        background-image: url("./image/back.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        }
+       .main_content{
+           
+           
+           justify-content: center;
+           align-items: center;
+           height: 50vh;
+
+
+           
+
+       }
+       .temp_form{
+           
+           display: flex;
+           margin: auto;
+           justify-content: center;
+           align-items: center;
+           font-size: 20px;
+           
+           border-radius: 20px;
+           text-decoration: none;
+           
+           
+       }
+       .temp_form input{
+           font-size: 30px;
+           
+           color: black
+           border-radius: 20px;
+           
+       }
+       #submitBtn{
+           background-color: blue;
+           color: wheat;
+           border-radius: 9px;
+       }
+
+      .temp_info{
+          
+          display: flex;
+          flex-direction: column;
+          width: 30%;
+          height: 40%;
+          text-align: center;
+          border-radius: 30px;
+          justify-content: center;
+          margin: auto;
+          position: relative;
+          top: 130px;
+          
+          
+          
+      }
+      .top-layer{
+          
+          color: white;
+          background-color: blue;
+                
+
+      }
+      .main_layer{
+        
+          background-color: black;
+          color: white;
+     }
+     .main_layer p{
+         font-size: 30px;
+     }
+     .main_layer span{
+         font-size: 30px;
+     }
+    </style>
+</head>
+<body>
+    
+     <div class="container-fluid main_header">
+      <div class="row">
+          <!-- left side div -->
+        <div class="col-md-8 col-12 mx-auto  main_header_left">
+            <h4 style="color: wheat;">Welcome to wether app</h4>
+            <h1 style="color: white;">Get the Latest <span style="color:red">Wether</span> Info of your City</h1>
+           <div class="main_content">
+               <form class="temp_form">
+                   <input type="text" id="cityName" placeholder="Enter Your City name" autocomplete="off"/>
+                   <input type="submit" value="search" id="submitBtn">
+                   
+
+               </form>
+               <div class="temp_info">
+                   <div class="top-layer">
+                       <p id="day"></p>
+                       <p id="today_data">tet</p>
+                   </div>
+                   <div class="main_layer ">
+                       <p id="city_name">GET Wether</p>
+                       <div class="middle_layer data_hide">
+                           <p id="temp"></p><span>°C</span>
+                           <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+            </div>
+           </div>
+     </div>   
+        
+</body>
+<script src="js/main1.js"></script>
+</html>

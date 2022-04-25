@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,600;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+}
+
+:root {
+  --main-bg: #1e272e;
+  --main-color: #0097e6;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin: 0;
+}
+
+.main_menu {
+  background-color: orangered;
+}
+
+.navbar {
+  color: #fff;
+  background-color: orangered;
+  padding: 2rem;
+}
+
+.navbar li {
+  margin-left: 2rem;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar-toggler {
+  background-color: white;
+}
+.fa-snowflake {
+  transition: all linear;
+  animation: rot 2s linear;
+  color: var(--main-color);
+  animation-iteration-count: infinite;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+/*main header*/
+.main_header_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70rem;
+  align-items: flex-start;
+}
+
+.main_header_left h1 {
+  font-size: 4rem;
+  margin: 1rem 0 4rem 0;
+  text-transform: capitalize;
+}
+.main_header_left button {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 6px;
+  background-color: #0097e6;
+  color: white;
+  margin: 10px;
+  font-size: 16px;
+  outline: none;
+}
+.main_header_left button:hover {
+  color: red;
+  background-color: #fff;
+  font-family: "Piazzolla", serif;
+  outline: none;
+}
+
+.main_header_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60rem;
+  align-items: flex-end;
+}
+.main_header_right .im1 {
+  width: 40rem;
+  height: 30rem;
+  border-radius: 10%;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+
+  background-color: black;
+}
+.footer p {
+  margin: 0;
+  text-align: center;
+  color: wheat;
+  line-height: 100%;
+  height: 10vh;
+  font-size: 1.5rem;
+  margin-top: auto;
+}
+
+/*responsive code*/
+@media (max-width: 768) {
+  .main_header_left {
+    height: auto;
+    margin: 5rem 0;
+  }
+  .main_header_right {
+    height: auto;
+    margin-top: 3rem;
+  }
+}
